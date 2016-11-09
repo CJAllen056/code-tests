@@ -1,0 +1,21 @@
+{
+  "name": "hackajob-phone-book",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "CJAllen056 <christopherjallen056@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CJAllen056/code-tests",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.5.8"
+  }
+}
