@@ -28,9 +28,18 @@ function entriesShow(req, res) {
   });
 }
 
+function entriesDelete(req, res) {
+  User.findByIdAndRemove({ _id: req.params.id }, function(err) {
+    if (err) return res.status(404).json({ message: "The request to delete the entry failed" });
+    res.status(200).json({ message: "Entry deleted" });
+  });
+}
+
+
 module.exports = {
   create: entriesCreate,
   index:  entriesIndex,
   update: entriesUpdate,
-  show:   entriesShow
+  show:   entriesShow,
+  delete: entriesDelete
 };
