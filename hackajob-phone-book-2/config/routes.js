@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 
-var staticsController = require("../controllers/staticsController")
+var staticsController = require("../controllers/staticsController");
 var entriesController = require("../controllers/entriesController");
 
 router.route("/")
