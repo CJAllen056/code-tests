@@ -85,3 +85,34 @@ li {
   border: 2px solid black;
   border-radius: 5px;
 }
+
+.formContainer {
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+
+.formListing {
+  margin-top: 20px;
+}
+
+.formContainer label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.formField {
+  width: 300px;
+  height: 30px;
+  margin: 3px 0;
+  font-size: 15px;
+}
+
+#submitBtn {
+  background: #ffe200;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 20px
+}
