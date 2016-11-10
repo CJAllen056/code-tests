@@ -7,7 +7,7 @@ splitAddresses = function() {
     $(this).html("");
 
     for (var i = 0; i < content.length; i++) {
-      $(this).append("<p>" + content[i] + "</p>");
+      $(this).append("<p>&nbsp;&nbsp;&nbsp;" + content[i] + "</p>");
     }
   });
 };

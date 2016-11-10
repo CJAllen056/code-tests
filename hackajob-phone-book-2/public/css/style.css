@@ -1,3 +1,46 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffe200;
+}
+
+header {
+  background: black;
+  height: 50px;
+  margin: 0;
+}
+
+header .menu {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header .menu li {
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+header .menu .homeButton {
+  float: left;
+}
+
+header .menu .newButton {
+  float: right;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffe200;
+}
+
+header ul li a:hover {
+  color: white;
+}
+
 .phonebook {
   width: 600px;
   margin: 0 auto;
@@ -9,16 +52,36 @@ li {
 }
 
 .entry {
-  width: 268px;
+  background: white;
+  width: 266px;
   height: 160px;
   display: inline-block;
   float: left;
   padding: 10px;
   margin: 5px;
-  border: 1px solid black;
-  border-radius: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+
+.entryName {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 .entryAddress p {
   margin: 0;
+}
+
+.entry form {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+
+.listingButton {
+  background: #ffe200;
+  border: 2px solid black;
+  border-radius: 5px;
 }
