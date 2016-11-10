@@ -1,0 +1,25 @@
+<div class="formContainer">
+  <form method="post" action="/entries/<%= entry.id %>">
+    <input type="hidden" name="_method" value="put"></input>
+
+    <div class="formListing">
+      <label for="entry_name">Name</label><br>
+      <input class="formField" type="text" name="entry[name]" id="entry_name" value="<%= entry.name %>"></input>
+    </div>
+
+    <div class="formListing">
+      <label for="entry_phone_number">Phone Number</label><br>
+      <input class="formField" type="text" name="entry[phone_number]" id="entry_phone_number" value="<%= entry.phone_number %>"></input>
+    </div>
+
+    <div class="formListing">
+      <label for="entry_address">Address</label><br>
+      <input class="formField" type="text" name="entry[address]" id="entry_address_1" value="<%= entry.address %>"></input>
+      <input class="formField" type="text" name="entry[address2]" id="entry_address_2"></input>
+      <input class="formField" type="text" name="entry[address3]" id="entry_address_3"></input>
+      <input class="formField" type="text" name="entry[address4]" id="entry_address_4"></input>
+    </div>
+
+    <input type="submit" value="Submit Changes" id="submitBtn"></input>
+  </form>
+</div>

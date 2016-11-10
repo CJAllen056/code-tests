@@ -74,10 +74,16 @@ li {
   margin: 0;
 }
 
-.entry form {
+.entry .listingDelete {
   position: absolute;
   top: 150px;
   right: 10px;
+}
+
+.entry .listingEdit {
+  position: absolute;
+  top: 150px;
+  right: 95px;
 }
 
 .listingButton {
@@ -106,6 +112,8 @@ li {
   height: 30px;
   margin: 3px 0;
   font-size: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 #submitBtn {

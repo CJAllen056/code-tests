@@ -4,6 +4,9 @@
       <p class="entryName"><%- entry.name %></p>
       <p>&nbsp;&nbsp;&nbsp;<%- entry.phone_number %></p>
       <p class="entryAddress">&nbsp;<%- entry.address %></p>
+      <form class="listingEdit" action="/entries/<%= entry.id %>/edit">
+        <input class="listingButton" type="submit" value="Edit entry"></button>
+      </form>
       <form class="listingDelete" method="post" action="/entries/<%= entry.id %>">
         <input type="hidden" name="_method" value="delete">
         <input class="listingButton" type="submit" value="Delete entry">

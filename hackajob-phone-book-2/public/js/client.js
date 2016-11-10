@@ -12,8 +12,18 @@ splitAddresses = function() {
   });
 };
 
+setEditAddress = function() {
+  var address = $("#entry_address_1").val();
+  var content = address.split(",");
+
+  for (var i = 0; i < content.length; i++) {
+    $("#entry_address_" + (i + 1)).val(content[i]);
+  }
+};
+
 main = function() {
   splitAddresses();
+  setEditAddress();
 };
 
 $(main);

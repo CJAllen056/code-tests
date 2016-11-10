@@ -24,6 +24,7 @@ function entriesShow(req, res) {
 
 function entriesEdit(req, res) {
   var id = parseInt(req.params.id);
+
   res.render("entries/edit", { entry : entries[id] });
 }
 
@@ -31,8 +32,9 @@ function entriesUpdate(req, res) {
   var id = parseInt(req.params.id);
   var entry = req.body.entry;
   entry.id = id;
+  entry.address = req.body.entry.address + "," + req.body.entry.address2 + "," + req.body.entry.address3 + "," + req.body.entry.address4;
   entries[id] = entry;
-  res.redirect(302, "/entries/" + id);
+  res.redirect(302, "/entries");
 }
 
 function entriesDelete(req, res) {
