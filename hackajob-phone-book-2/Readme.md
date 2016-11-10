@@ -1,3 +1,5 @@
+### Readme
+
 To boot up the app, follow these steps:
 
 1. Run npm install in the console
