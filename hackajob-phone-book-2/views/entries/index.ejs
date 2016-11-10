@@ -1,5 +1,8 @@
 <ul>
   <% entries.forEach(function(entry, index) { %>
-    <li>hello</li>
+    <li class="entry">
+      <li class="entryName"><%- entry.name %>: <%- entry.phone_number %></li>
+      <li class="entryAddress"><%- entry.address %></li>
+    </li>
   <% }) %>
 </ul>

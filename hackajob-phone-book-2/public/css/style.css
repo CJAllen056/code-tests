@@ -1,0 +1,17 @@
+ul {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.entry {
+  padding: 20px 0;
+}
+
+.entryAddress p {
+  margin: 0;
+}
