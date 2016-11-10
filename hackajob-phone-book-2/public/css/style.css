@@ -1,5 +1,5 @@
-ul {
-  width: 500px;
+.phonebook {
+  width: 600px;
   margin: 0 auto;
   padding: 0;
 }
@@ -9,7 +9,14 @@ li {
 }
 
 .entry {
-  padding: 20px 0;
+  width: 268px;
+  height: 160px;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 2px;
 }
 
 .entryAddress p {

@@ -11,6 +11,7 @@ function entriesNew(req, res) {
 function entriesCreate(req, res) {
   var entry = req.body.entry;
   entry.id = entries.length;
+  entry.address = req.body.entry.address + "," + req.body.entry.address2 + "," + req.body.entry.address3 + "," + req.body.entry.address4;
   entries.push(entry);
   res.redirect(302, "/entries");
 }

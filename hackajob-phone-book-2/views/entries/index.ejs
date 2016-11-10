@@ -1,8 +1,12 @@
-<ul>
+<ul class="phonebook">
   <% entries.forEach(function(entry, index) { %>
     <li class="entry">
-      <li class="entryName"><%- entry.name %>: <%- entry.phone_number %></li>
-      <li class="entryAddress"><%- entry.address %></li>
+      <p class="entryName"><%- entry.name %>: <%- entry.phone_number %></p>
+      <p class="entryAddress"><%- entry.address %></p>
+      <form class="listingDelete" method="post" action="/entries/<%= entry.id %>">
+        <input type="hidden" name="_method" value="delete">
+        <input class="listingButton" type="submit" value="Delete entry">
+      </form>
     </li>
-  <% }) %>
-</ul>
+    <% }) %>
+  </ul>
