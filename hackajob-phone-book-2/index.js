@@ -8,10 +8,11 @@ var expressLayouts  = require("express-ejs-layouts");
 
 var app             = express();
 
-
 app.use(morgan("dev"));
 
 app.set("views", __dirname + "/views");
+
+app.set("view engine", "ejs");
 
 app.use(express.static(__dirname + "/public"));
 

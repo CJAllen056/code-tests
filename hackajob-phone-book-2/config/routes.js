@@ -1,21 +1,25 @@
 var express = require("express");
 var router = express.Router();
 
+var staticsController = require("../controllers/staticsController")
 var entriesController = require("../controllers/entriesController");
 
-router.route("/films")
+router.route("/")
+  .get(staticsController.home);
+
+router.route("/entries")
   .get(entriesController.entriesIndex)
     .post(entriesController.entriesCreate);
 
-router.route("/films/new")
+router.route("/entries/new")
   .get(entriesController.entriesNew);
 
-router.route("/films/:id")
+router.route("/entries/:id")
   .get(entriesController.entriesShow)
     .put(entriesController.entriesUpdate)
       .delete(entriesController.entriesDelete);
 
-router.route("/films/:id/edit")
+router.route("/entries/:id/edit")
   .get(entriesController.entriesEdit);
 
 module.exports = router;

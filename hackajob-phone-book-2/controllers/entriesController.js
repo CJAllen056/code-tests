@@ -1,4 +1,4 @@
-var entries = require("http://www.mocky.io/v2/581335f71000004204abaf83");
+var entries = require("../data/entries.js");
 
 function entriesIndex(req, res) {
   res.render("entries/index", { entries : entries });
