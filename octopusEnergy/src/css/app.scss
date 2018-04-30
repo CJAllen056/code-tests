@@ -1,11 +1,35 @@
 
 $lightBlue: #90a3c2;
-$midBlue: #01193b;
-$darkBlue: #030c1f;
+$midBlue:   #01193b;
+$darkBlue:  #030c1f;
+$pink:      #fd1577;
 
 body {
   margin: 0;
   font-family: sans-serif;
+
+  .nav-bar {
+    display: flex;
+    padding: 1em;
+    height: 2.3em;
+    border-top: 1px solid $pink;
+    background-color: $darkBlue;
+    color: white;
+
+    .logo-box {
+      flex-grow: 1;
+      text-align: left;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    i {
+      font-size: 2.3em;
+      cursor: pointer;
+    }
+  }
 
   .footer {
     padding: 0.5em 1em;
