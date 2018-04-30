@@ -1,7 +1,8 @@
 
-$lightBlue: #90a3c2;
-$midBlue:   #01193b;
-$darkBlue:  #030c1f;
+$lightestBlue: #90a3c2;
+$lighterBlue: #375b8c;
+$darkerBlue:   #01193b;
+$darkestBlue:  #030c1f;
 $pink:      #fd1577;
 
 body {
@@ -10,10 +11,10 @@ body {
 
   .nav-bar {
     display: flex;
-    padding: 1em;
-    height: 2.3em;
+    padding: 1rem;
+    height: 2.3rem;
     border-top: 1px solid $pink;
-    background-color: $darkBlue;
+    background-color: $darkestBlue;
     color: white;
 
     .logo-box {
@@ -26,16 +27,162 @@ body {
     }
 
     i {
-      font-size: 2.3em;
+      font-size: 2.3rem;
       cursor: pointer;
     }
   }
 
+  .product-listing {
+
+    h1, h2,  p {
+      margin: 0;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    &>div {
+      padding: 2rem 2.5rem;
+
+      &.img-section {
+        margin-top: -3rem;
+        padding: 0 1rem;
+        background-color: $darkestBlue;
+  
+        img {
+          width: 100%;
+          transform: translate(0, 3rem);
+        }
+      }
+
+      &.header-section {
+        padding-top: 4rem;
+        padding-bottom: 0.5rem;
+        background-color: $darkerBlue;
+
+        p {
+          color: $lighterBlue;
+          font-size: 1.5em;
+          font-weight: 100;
+        }
+      }
+
+      &.price-section {
+        background-color: $darkestBlue;
+
+        div {
+          display: inline-block;
+          width: 50%;
+
+          &.quant-box {
+
+            .quant-flex {
+              display: flex;
+              width: 100%;
+                text-align: center;
+
+
+              .quantity {
+                display: inline-block;
+                flex-grow: 1;
+              }
+
+              .quant-button {
+                flex-grow: 1;
+                height: 2.7rem;
+                width: 2.7rem;
+                border: 0;
+                border-radius: 0.5rem;
+                background-color: $lighterBlue;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .add-to-cart {
+          width: 100%;
+          height: 4rem;
+          margin-top: 1.5rem;
+          border: 2px solid $pink;
+          border-radius: 1rem;
+          background-color: $pink;
+          font-size: 2rem;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      &.desc-section {
+        background-color: $darkerBlue;
+
+        p {
+          margin: 1em 0;
+          font-weight: 100;
+        }
+
+        button {
+          padding: 0;
+          border: 0;
+          background-color: transparent;
+          color: $pink;
+          font-size: 1em;
+          font-weight: 100;
+          text-decoration: underline;
+        }
+      }
+
+      &.spec-section {
+        background-color: $darkestBlue;
+
+        table {
+          padding: 0.5em 0;
+          font-weight: 100;
+          color: white;
+
+          tr {
+            td {
+              padding: 0.3em 0;
+              border-top: 2px solid $darkerBlue;
+            }
+
+            &:first-child td {
+              border-top: 0;
+            }
+          }
+        }
+
+        button {
+          padding: 0;
+          border: 0;
+          background-color: transparent;
+          color: $pink;
+          font-size: 1em;
+          font-weight: 100;
+          text-decoration: underline;
+        }
+      }
+
+      &.performance-section {
+        background-color: $darkestBlue;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
   .footer {
-    padding: 0.5em 1em;
-    background-color: $midBlue;
-    color: $lightBlue;
+    padding: 0.5rem 1rem;
+    background-color: $darkerBlue;
+    color: $lightestBlue;
     font-weight: 100;
-    line-height: 1.5em;
+    line-height: 1.5rem;
   }
 }
