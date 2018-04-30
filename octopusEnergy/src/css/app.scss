@@ -1,0 +1,17 @@
+
+$lightBlue: #90a3c2;
+$midBlue: #01193b;
+$darkBlue: #030c1f;
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+
+  .footer {
+    padding: 0.5em 1em;
+    background-color: $midBlue;
+    color: $lightBlue;
+    font-weight: 100;
+    line-height: 1.5em;
+  }
+}

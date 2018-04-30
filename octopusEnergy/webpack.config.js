@@ -15,6 +15,12 @@ var config = {
             test: /\.js?/,
             exclude: /node_modules/,
             loader: "babel-loader",
+        }, {
+            test:/\.(s*)css$/,
+            use:['style-loader','css-loader', 'sass-loader'],
+        }, {
+            test: /\.(png|jp(e*)g|svg)$/,  
+            use: 'url-loader',
         }],
     },
     devServer: {
